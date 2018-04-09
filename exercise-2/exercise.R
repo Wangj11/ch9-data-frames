@@ -32,10 +32,10 @@ salaries_frame$got_raise <- new_salaries > salaries
 ### cell rather than the whole row!)
 
 # What was the 2018 salary of employee 57
-salaries_frame()
+salaries_frame[57, "new_salaries"]
 
 # How many employees got a raise?
-
+nrow(salaries_frame[salaries_frame$got_raise == TRUE, ])
 
 # What was the dollar value of the highest raise?
 
